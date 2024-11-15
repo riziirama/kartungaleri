@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/0c/11/0b/0c110bbc5ff9be0cd7b063fc285c4cea.jpg'); /* URL gambar latar belakang */
+            background-size: cover; /* Memastikan gambar menutupi seluruh area */
+            background-position: center; /* Memusatkan gambar */
+            background-attachment: fixed; /* Latar belakang tetap saat scrolling */
+            background-color: #f4f4f4; /* Warna cadangan jika gambar gagal dimuat */
+        }
+
+        h1 {
+            background-color: rgba(51, 51, 51, 0.8); /* Transparansi pada background heading */
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .photo {
+            margin: 10px;
+            border: 2px solid #00638d;
+            padding: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo img {
+            max-width: 300px;
+            max-height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .photo img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Cartoon Gallery</h1>
+    <div class="gallery">
+        <div class="photo">
+            <img src="https://i.pinimg.com/736x/4d/8f/ce/4d8fcea1a8efb1d2389859dbbe3514de.jpg" alt="Foto 1">
+        </div>
+        <div class="photo">
+            <img src="https://i.pinimg.com/474x/51/e9/a5/51e9a52f8a061a560925605c816a41b8.jpg" alt="Foto 2">
+        </div>
+        <div class="photo">
+            <img src="https://cdn-images.dzcdn.net/images/artist/1c35671ddd3004ea65300aef801eb362/1900x1900-000000-80-0-0.jpg" alt="Foto 3">
+        </div>
+        <div class="photo">
+            <img src="https://i.pinimg.com/736x/56/5e/49/565e494650038ebcf612ea8042ef7338.jpg" alt="Foto ">
+        </div>
+        <div class="photo">
+            <img src="https://i.pinimg.com/736x/d2/10/25/d21025226814cc2a0e3dc866db0f8e03.jpg" alt="Foto 4">
+        </div>
+        <div class="photo">
+            <img src="https://i.pinimg.com/736x/c5/e8/83/c5e883c9b43cc707cab70e67ec2e3c00.jpg" alt="Foto 5">
+        </div>
+        <div class="photo">
+            <img src="https://pm1.aminoapps.com/6828/b66f17a6c53a7b586d38ad1d72e63e8eaa70c178v2_hq.jpg" alt="Foto 6">
+        </div>
+        <div class="photo">
+            <img src="https://i.pinimg.com/736x/13/57/45/135745f90a1bf5a236783c68c7d85752.jpg" alt="Foto 7">
+        </div>
+        
+        <!-- Tambahkan foto -->
+    </div>
+</body>
+</html>
